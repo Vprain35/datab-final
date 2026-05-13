@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Catalogue</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>📚 Library Catalogue</h1>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search books..."
+        >
+
+    </header>
+
+    <!-- ADD BOOK FORM -->
+
+    <section class="form-section">
+
+        <h2>Add Book</h2>
+
+        <form id="bookForm">
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Title"
+                required
+            >
+
+            <input
+                type="text"
+                id="author"
+                placeholder="Author"
+                required
+            >
+
+            <input
+                type="text"
+                id="publisher"
+                placeholder="Publisher"
+            >
+
+            <input
+                type="number"
+                id="releaseYear"
+                placeholder="Release Year"
+            >
+
+            <textarea
+                id="description"
+                placeholder="Description"
+            ></textarea>
+
+            <button type="submit">
+                Add Book
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- CATALOGUE -->
+
+    <main>
+
+        <div
+            id="catalogueContainer"
+            class="catalogue-grid"
+        ></div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
